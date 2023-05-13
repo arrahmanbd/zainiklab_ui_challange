@@ -21,14 +21,13 @@ class BottomNavigationItemList extends StatelessWidget {
           children: <Widget>[
             iconNav(IconName.homeIcon, "nav_home".tr, 0),
             iconNav(IconName.discoverIcon, "nav_explore".tr, 1),
-            Container(width: MediaQuery.of(context).size.width *0.15), //IconSize is 48/4=12
+            Container(width: MediaQuery.of(context).size.width *0.12), //IconSize is 48/4=12
             iconNav(IconName.messageIcon, "nav_message".tr, 2),
             iconNav(IconName.bagIcon, "nav_store".tr, 3),
           ],
         ),
       ),
     );
-    
   }
 }
 

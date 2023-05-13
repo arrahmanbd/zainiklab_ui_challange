@@ -33,12 +33,12 @@ class HomeScreen extends StatelessWidget {
                 underline: Container(),
                 items: const [
                   DropdownMenuItem(
-                    value: 'en',
-                    child: Text("Eng"),
-                  ),
-                  DropdownMenuItem(
                     value: 'bn',
                     child: Text("বাংলা"),
+                  ),
+                  DropdownMenuItem(
+                    value: 'en',
+                    child: Text("Eng"),
                   ),
                 ],
                 value: controller.appLocale,

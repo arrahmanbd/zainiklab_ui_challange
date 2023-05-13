@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../../repository/storage_repository/shared_preferences.dart';
 
 class AppLanguageController extends GetxController {
-  String appLocale = 'bn';
+  String appLocale = 'en';
   LocalStorage localStorage = LocalStorage();
   @override
   void onInit() async {
