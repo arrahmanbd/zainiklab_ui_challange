@@ -11,13 +11,14 @@ class IconBottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 80,
+      width: double.infinity,
       child: Stack(
         children: [
           const BottomNavigationItemList(),
           Center(
             child: ElevatedButton(
               onPressed: () {
-                 Utils.openDialog();
+              Utils.openDialog();
               },
               style: ElevatedButton.styleFrom(
                 shape: const CircleBorder(), backgroundColor:AppColor.iconPrimary,

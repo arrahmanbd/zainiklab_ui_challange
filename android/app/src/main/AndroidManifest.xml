@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zainik.ar.zainiklab">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="zainiklab"
         android:name="${applicationName}"
