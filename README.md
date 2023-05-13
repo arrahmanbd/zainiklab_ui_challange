@@ -19,6 +19,15 @@ flutter pub get
 ```
 4. Run the project:
 
+## Features
+
+1. Rest API Implimented.
+2. Use GetX State Management.
+3. Implemented Material3 Design Components.
+4. Implemented Flutter Animations.
+5. Implemented Flutter Localization.
+6. Implemented Dynamic Grid View.
+7. Implemented Extra 4 Page accooroding this Design
 
 ## Screenshot
 
