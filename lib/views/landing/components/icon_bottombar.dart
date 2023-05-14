@@ -18,14 +18,18 @@ class IconBottomBar extends StatelessWidget {
           Center(
             child: ElevatedButton(
               onPressed: () {
-              Utils.openDialog();
+                Utils.openDialog();
               },
               style: ElevatedButton.styleFrom(
-                shape: const CircleBorder(), backgroundColor:AppColor.iconPrimary,
+                shape: const CircleBorder(),
+                backgroundColor: AppColor.iconPrimary,
                 padding: const EdgeInsets.all(defaultSpacing),
                 elevation: 0.0,
               ),
-              child: const Icon(Icons.add,color: AppColor.whiteColor,),
+              child: const Icon(
+                Icons.add,
+                color: AppColor.whiteColor,
+              ),
             ),
           ),
         ],

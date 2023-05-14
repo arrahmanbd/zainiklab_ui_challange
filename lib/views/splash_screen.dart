@@ -19,8 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-        overlays: SystemUiOverlay.values);
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,overlays: SystemUiOverlay.values);
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
         statusBarColor: AppColor.activeColor,
@@ -29,27 +28,24 @@ class _SplashScreenState extends State<SplashScreen> {
     );
     return Scaffold(
       backgroundColor: AppColor.activeColor,
-      body: Container(
-        color: AppColor.activeColor.withOpacity(.4),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const SVG(
-                asset: IconName.logoIcon,
-                size: 72,
-                color: AppColor.whiteColor,
-              ),
-              const SizedBox(height: 10.0),
-              Text(
-                'splash_text'.tr,
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                    color: AppColor.secondaryWhite, fontSize: 24),
-              ),
-            ],
-          ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const SVG(
+              asset: IconName.logoIcon,
+              size: 72,
+              color: AppColor.whiteColor,
+            ),
+            const SizedBox(height: 10.0),
+            Text(
+              'splash_text'.tr,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                  color: AppColor.secondaryWhite, fontSize: 24),
+            ),
+          ],
         ),
       ),
     );

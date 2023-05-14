@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 class LandingPageController extends GetxController {
-  RxInt tabIndex = 1.obs;
+  RxInt tabIndex = 0.obs;
 
   void changeTabIndex(int index) {
     tabIndex.value = index;

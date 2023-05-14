@@ -1,5 +1,5 @@
-
 import 'core/export.dart';
+
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
@@ -12,11 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Change the status bar color
-   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: AppColor.whiteColor, // Change the color as needed
-      statusBarBrightness: Brightness.light,
-      statusBarIconBrightness: Brightness.dark,
-    ));
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: AppColor.whiteColor,
+        statusBarBrightness: Brightness.light,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ZainikLab',

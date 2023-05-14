@@ -36,10 +36,7 @@ class Utils {
 
   static void openDialog() {
     // hide status bar
-    Get.dialog(BackdropFilter(
-      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-      child: const CustomProfileCardDialog(),
-    )).then((value) {
+    Get.dialog(const CustomProfileCardDialog()).then((value) {
       // restore system UI visibility
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
           overlays: SystemUiOverlay.values);
