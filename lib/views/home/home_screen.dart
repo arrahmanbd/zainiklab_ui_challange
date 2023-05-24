@@ -1,8 +1,7 @@
-import 'package:zainiklab/utils/utils.dart';
 
 import '../../core/export.dart';
-import '../../core/localization/lang_controller.dart';
 import 'components/categories.dart';
+import 'components/language_widget.dart';
 import 'components/new_arrival_products.dart';
 import 'components/popular_products.dart';
 import 'components/search_form.dart';
@@ -12,6 +11,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -23,32 +23,7 @@ class HomeScreen extends StatelessWidget {
               size: 18,
             )),
         actions: [
-          GetBuilder<AppLanguageController>(
-            init: AppLanguageController(),
-            builder: (controller) {
-              return DropdownButton(
-                alignment: Alignment.bottomRight,
-                dropdownColor: AppColor.secondaryWhite,
-                elevation: 0,
-                underline: Container(),
-                items: const [
-                  DropdownMenuItem(
-                    value: 'bn',
-                    child: Text("বাংলা"),
-                  ),
-                  DropdownMenuItem(
-                    value: 'en',
-                    child: Text("Eng"),
-                  ),
-                ],
-                value: controller.appLocale,
-                onChanged: (value) {
-                  controller.changeLanguage(value.toString());
-                  Utils.snackBar('Setting Saved', 'Language change to $value');
-                },
-              );
-            },
-          ),
+         LanguageWidget(),
           IconButton(
               onPressed: () {},
               icon: const SVG(

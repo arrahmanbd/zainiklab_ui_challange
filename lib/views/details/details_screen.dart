@@ -28,8 +28,8 @@ class DetailsScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-                physics: const BouncingScrollPhysics(
-                    parent: AlwaysScrollableScrollPhysics()),
+        physics: const BouncingScrollPhysics(
+            parent: AlwaysScrollableScrollPhysics()),
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
           child: Column(
@@ -80,8 +80,8 @@ class DetailsScreen extends StatelessWidget {
                         style: Theme.of(context).textTheme.titleSmall,
                       ),
                       const SizedBox(height: defaultSpacing / 2),
-                      Row(
-                        children: const [
+                      const Row(
+                        children: [
                           ColorDot(
                             color: Color(0xFFBEE8EA),
                             isActive: false,
@@ -106,7 +106,11 @@ class DetailsScreen extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: primaryColor,
                                 shape: const StadiumBorder()),
-                            child: Text("add_cart".tr,style: const TextStyle(color: AppColor.whiteColor),),
+                            child: Text(
+                              "add_cart".tr,
+                              style:
+                                  const TextStyle(color: AppColor.whiteColor),
+                            ),
                           ),
                         ),
                       )

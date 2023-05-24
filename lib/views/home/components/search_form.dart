@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:zainiklab/core/colors/app_color.dart';
 
 import '../../../core/assets/image_assets.dart';
 import '../../../core/components/svg_icon.dart';
@@ -36,23 +36,19 @@ class SearchForm extends StatelessWidget {
           ),
           suffixIcon: Padding(
             padding: const EdgeInsets.symmetric(
-                horizontal: defaultSpacing, vertical: defaultSpacing / 2),
+            horizontal: defaultSpacing, vertical: defaultSpacing / 2),
             child: SizedBox(
-              width: 48,
-              height: 48,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  elevation: 0,
-                  backgroundColor: primaryColor,
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(12)),
-                  ),
-                ),
-                onPressed: () {},
-                child: SvgPicture.asset("assets/icons/Filter.svg"),
-              ),
+               width: 48,
+                height: 48,
+              child: MaterialButton(onPressed: () {  }, 
+              elevation: 0,
+              color: primaryColor,
+               shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(12)),),
+              child: SVG(asset:IconName.filterIcon,size:32,color: AppColor.whiteColor)),
             ),
           ),
+        
         ),
       ),
     );

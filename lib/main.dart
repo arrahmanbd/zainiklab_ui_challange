@@ -1,30 +1,26 @@
 import 'core/export.dart';
+import 'repository/language_repository/lang_controller.dart';
 
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  final LocaleController locale = Get.put(LocaleController());
 
   @override
   Widget build(BuildContext context) {
-    // Change the status bar color
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: AppColor.whiteColor,
-        statusBarBrightness: Brightness.light,
-        statusBarIconBrightness: Brightness.dark,
-      ),
-    );
+    final langs = locale.getSavedLocale();
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ZainikLab',
       translations: Languages(),
-      locale: const Locale('en'),
-      fallbackLocale: const Locale('en'),
+      locale: langs,
+      fallbackLocale: const Locale('en', 'US'),
       theme: AppTheme.lightTheme,
       getPages: AppRoutes.appRoutes(),
     );

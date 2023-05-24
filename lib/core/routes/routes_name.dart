@@ -1,6 +1,5 @@
 export '../../views/explorer/explorer_view.dart';
 export '../../views/landing/landing_view.dart';
-export '../../views/splash_screen.dart';
 
 class RouteName {
   static const String splashScreen = '/';

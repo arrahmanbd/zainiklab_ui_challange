@@ -3,13 +3,13 @@ import 'package:get/get_navigation/src/root/internacionalization.dart';
 class Languages extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
-        'en': {
+        'en_US': {
           'email_hint': 'Email',
           'internet_exception':
-              "We're unable tp show results.\nPlease check your data\nconenction.",
+              "We're unable to show results.\nPlease check your data\nconenction.",
           'general_exception':
               "We're unable to process your request.\n Please try again",
-          'splash_text': 'Zainik\nShop',
+          'splash_text': 'ShopIT',
           'search_placeholder': 'Search Items..',
           'search_result_text': 'Search Result',
           'login': 'Login',
@@ -27,8 +27,8 @@ class Languages extends Translations {
           'colors': 'Colors',
           'see_all': 'See All',
         },
-        'bn': {
-          'splash_text': 'যাইনিক সপ',
+        'bn_BD': {
+          'splash_text': 'সপ IT',
           'internet_exception': "কোন ডেটা সংযোগ নেই।\nদয়া করে ডেটা চালু\nকরুন।",
           'general_exception':
               "আমরা আপনার অনুরোধ রাখতে পারছি না।\n পুনরায় চেষ্টা করুন।",
@@ -48,16 +48,3 @@ class Languages extends Translations {
         },
       };
 }
-
-// import 'package:get/get.dart';
-// import 'package:get_localization/utils/langs/ar.dart';
-// import 'package:get_localization/utils/langs/en.dart';
-
-// class Translation extends Translations {
-//   @override
-//   // TODO: implement keys
-//   Map<String, Map<String, String>> get keys => {
-//         'en': en,
-//         'ar': ar,
-//       };
-// }

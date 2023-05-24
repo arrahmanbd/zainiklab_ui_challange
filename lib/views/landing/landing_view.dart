@@ -13,12 +13,12 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
-          const SystemUiOverlayStyle(
-            statusBarColor: AppColor.whiteColor, 
-            statusBarBrightness: Brightness.light,
-            statusBarIconBrightness: Brightness.dark,
-          ),
-        );
+      const SystemUiOverlayStyle(
+        statusBarColor: AppColor.whiteColor,
+        statusBarBrightness: Brightness.light,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
     final LandingPageController pageControl =
         Get.put(LandingPageController(), permanent: false);
     return SafeArea(

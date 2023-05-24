@@ -49,9 +49,9 @@ class CustomProfileCardDialogState extends State<CustomProfileCardDialog> {
                           ),
                         ),
                         const SizedBox(width: 12),
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               'Saber Ali',
                               style: TextStyle(
